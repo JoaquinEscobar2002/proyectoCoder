@@ -1,0 +1,370 @@
+/* ---estilos aplicados a todos los html--- */
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Urbanist', sans-serif;
+}
+
+/* header y nav */
+
+header{
+    background-color: orange;
+}
+
+header div h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav ul li{
+    list-style: none;
+    font-size: 25px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.nav ul li a{
+    color: black;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(24, 23, 23);
+    color: white;
+}
+
+
+/* ---index.html--- */
+/* portada */
+
+.contenido__portada{
+    background-size: cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0.8)), url(../img/portada.jpg);
+    height: 60vh;
+
+    padding: 4rem;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+}
+
+.contenido__portada h2{
+    font-size: 3.5rem;
+}
+
+.contenido__portada--parrafo{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.boton__portada{
+    color: white;
+    border: solid;
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    font-weight: 800;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+/* categorias */
+
+.contenido__categorias{
+    margin: 0rem 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: start;
+    overflow-y: scroll;
+}
+
+.contenido__categorias--item{
+    width: 10rem;
+    height: 5rem;
+    background-color: #222222;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem .5rem;
+}
+
+/* productos main */
+
+.contenido__texto{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 5%;
+    margin-top: 2rem;
+}
+
+.contenido__texto--parrafo{
+    margin-top: .5rem ;
+}
+
+/* div productos */
+
+main .productos{
+    margin: 50px 0px;
+}
+
+main .productos .productos__titulo{
+    display: flex;
+    margin: 0px 5%;
+}
+
+main .productos .productos__contenido{
+    display: flex;
+    height: 350px;
+    margin: 0px 5%;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+main .productos .productos__contenido .item__productos{
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main .productos .productos__contenido .item__productos .item__productos--text{
+    margin: 5px;
+}
+
+/* muebles por colores */
+
+main .informacion{
+    text-align: center;
+    padding: 50px 10%;
+}
+
+main .contenido__colores {
+    text-align: center;
+    margin: 5%;
+}
+
+
+/* ---productos.html--- */
+/* categoria extendido */
+
+.contenido__categorias--titulo{
+    margin: 2rem 5% .5rem;
+}
+
+.contenido__extendido .contenido__categorias{
+    margin: 0rem 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: start;
+    overflow-y: scroll;
+}
+
+
+/* ---estilos guia.html--- */
+/*main*/
+
+.section{
+    display: flex;
+    margin: 35px 5%;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.section__cuadro, .section__cuadro--dos{
+    margin: 20px 0px;
+}
+
+.section__cuadro ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+}
+
+.section__cuadro--dos ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 150px);
+}
+
+.section__cuadro ul li{
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    text-align: center;
+}
+
+.section__cuadro--dos ul li{
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    text-align: center;
+}
+
+.lista ul{
+    margin: 5%;
+}
+
+.lista ul li{
+    margin: 20px;
+}
+
+.section__dos{
+    display: flex;
+    margin: 35px 5%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section__dos .encuesta{
+    text-align: center;
+}
+
+.section__dos .encuesta button{
+    height: 30px;
+    width: 50px;
+    border: 0.5px solid rgb(150, 145, 145);
+    border-radius: 10px;
+}
+
+.section__dos .encuesta button a{
+    text-decoration: none;
+    color: black;
+}
+
+.section__dos .consulta{
+    text-align: center;
+}
+
+.section__dos .consulta button{
+    height: 30px;
+    width: 150px;
+    border: 0.5px solid rgb(150, 145, 145);
+    border-radius: 10px;
+}
+
+.section__dos .consulta button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ---novedades.html--- */
+/* main */
+
+.main__novedades{
+    margin: 5%;
+}
+
+.seccion__articulos{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.intro{
+    width: 100%;
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+.articulo{
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid rgb(80, 80, 80);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.articulo .articulo__info{
+    width: 90%;
+    text-align: start;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+button{
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/*-----Estilos contacto.html----*/
+/*---estilos main---*/
+
+.contenedor{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenedor form {
+    margin: 5%;
+    width: 400px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: start;
+}
+
+.contenedor form fieldset{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.in {
+    width: 300px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    background-color: white;
+    font-size: 20px;
+    color: black;
+    border-radius: 8px;
+}
+
+.in__msj{
+    width: 300px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    background-color: white;
+    font-size: 20px;
+    color: black;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.boton__enviar{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+
+/* fin */
