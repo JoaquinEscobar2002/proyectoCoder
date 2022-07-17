@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,29 +7,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../style/style.css">
-    <!-- titulo -->
+    <!-- TITULO -->
     <title>Guia</title>
 </head>
-<body>
-    
-    <header>
-        <!-- logo de la pagina -->
-        <div>
-            <h1><a href="../index.html">LogoTienda</a></h1>
-        </div>
-        <!-- menu de navegacion -->
-        <nav class="nav">
-            <ul>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="novedades.html">Novedades</a></li>
-            </ul>
-            <ul>
-                <li><a href="guia.html">Como comprar</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+<body>  
+    <header class="container-fluid">
+        <!-- Menu de navegacion -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h1><a class="nav-link" href="../index.html">LogoTienda</a></h1>
+                <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+                    <ul class="navbar-nav row justify-content-center">
+                        <li class="nav-item col-auto fs-5">
+                            <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item col-auto fs-5">
+                            <a class="nav-link active" aria-current="page" href="novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item col-auto fs-5">
+                            <a class="nav-link active" aria-current="page" href="guia.html">Como comprar</a>
+                        </li>
+                        <li class="nav-item col-auto fs-5">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+    </div>
     </header>
 
     <main class="main__info">
@@ -89,7 +102,7 @@
 
             <div class="consulta">
                 <h3>¿Podemos ayudarte en algo mas?</h3>
-                <button><a href="contacto.html"> Dejanos tu consulta! </a></button>
+                <button><a href="contacto.html"> Escribinos! </a></button>
             </div>
         </section>
     </main>
@@ -100,6 +113,7 @@
         <p>Red social 2</p>
         <p>Red social 3</p>
     </footer>
-
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
