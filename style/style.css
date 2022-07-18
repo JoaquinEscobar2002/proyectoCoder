@@ -46,37 +46,6 @@ footer {
 
 
 /* ---index.html--- */
-/* portada */
-
-.contenido__portada{
-    background-size: cover;
-    background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0.8)), url(../img/portada.jpg);
-    height: 60vh;
-
-    padding: 4rem;
-    display: flex;
-    align-items: flex-end;
-    color: white;
-}
-
-.contenido__portada h2{
-    font-size: 3.5rem;
-}
-
-.contenido__portada--parrafo{
-    margin-top: 1rem;
-    font-size: 1.1rem;
-}
-
-.boton__portada{
-    color: white;
-    border: solid;
-    display: inline-block;
-    padding: 0.3rem 1rem;
-    font-weight: 800;
-    border-radius: 5px;
-    margin-top: 1rem;
-}
 
 /* categorias */
 
@@ -147,18 +116,43 @@ main .productos .productos__contenido .item__productos .item__productos--text{
     margin: 5px;
 }
 
-/* muebles por colores */
+/* seccion productos */
 
-main .informacion{
-    text-align: center;
-    padding: 50px 10%;
+.seccion__productos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-main .contenido__colores {
-    text-align: center;
-    margin: 5%;
+.seccion__productos--informacion{
+    margin: 0px 5%;
+    text-align: start;
+    margin-top: 4rem;
 }
 
+/* tarjeta con productos */
+
+.productos__card{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0rem;
+    border: 1px solid rgb(80, 80, 80);
+    text-align: center;
+}
+
+.productos__card .productos__info button{
+    margin: 1rem;
+}
+
+@media screen and (min-width:570px) {
+    .productos__card{
+        width: 270px;
+        margin: 1rem;
+    }
+}
 
 /* ---productos.html--- */
 /* categoria extendido */
