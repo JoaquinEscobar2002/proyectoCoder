@@ -87,6 +87,7 @@ footer {
 
 main .productos{
     margin: 50px 0px;
+    
 }
 
 main .productos .productos__titulo{
@@ -96,8 +97,9 @@ main .productos .productos__titulo{
 
 main .productos .productos__contenido{
     display: flex;
-    height: 350px;
+    height: 500px;
     margin: 0px 5%;
+    padding: 0px 1rem;
     flex-direction: row;
     overflow-x: scroll;
 }
@@ -106,15 +108,37 @@ main .productos .productos__contenido .item__productos{
     flex: 0 0 auto;
     width: 150px;
     height: 150px;
-    margin: 5px;
+    margin: .5rem;
 
     display: flex;
     flex-direction: column;
+    transition: 1s;
 }
 
 main .productos .productos__contenido .item__productos .item__productos--text{
     margin: 5px;
 }
+
+.btn__productos{
+    border-radius: 0%;
+    width: 100%;
+}
+
+@media screen and (min-width:570px){
+    .btn__productos:hover{
+        background-color: red;
+        transition: .5s;
+    }
+    
+    .item__productos:hover{
+        transform: scale(1.2);
+    }
+    .productos__contenido::-webkit-scrollbar{
+        display: none;
+    }
+
+}
+
 
 /* seccion productos */
 
@@ -147,10 +171,25 @@ main .productos .productos__contenido .item__productos .item__productos--text{
     margin: 1rem;
 }
 
+.boton__animado{
+    width: 300px;
+    padding: 1rem 0px;
+    border-radius: 0;
+}
+
+.boton__animado:hover{
+    background-color: red;
+    transition: .5s;
+}
+
+
 @media screen and (min-width:570px) {
     .productos__card{
         width: 270px;
         margin: 1rem;
+    }
+    .boton__animado{
+        width: 270px;
     }
 }
 
