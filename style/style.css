@@ -26,6 +26,10 @@ header div h1 a {
     flex-wrap: wrap;
 }
 
+.menu{
+    text-align: center;
+}
+
 .nav ul li{
     list-style: none;
     font-size: 25px;
