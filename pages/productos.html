@@ -18,13 +18,17 @@
 </head>
 <body>  
     <header class="container-fluid">
-        <!-- Menu de navegacion -->
-        <nav class="navbar navbar-expand-lg">
+        <!-- MENU DE NAVEGACION -->
+        <nav class="navbar navbar-expand-lg menu">
             <div class="container-fluid">
+                <!-- LOGO -->
+                <h1><a class="nav-link" href="../index.html">LogoTienda</a></h1>
+
+                <!-- MENU HAMBURGUESA -->
                 <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <h1><a class="nav-link" href="../index.html">LogoTienda</a></h1>
+
                 <div class="collapse navbar-collapse row" id="navbarSupportedContent">
                     <ul class="navbar-nav row justify-content-center">
                         <li class="nav-item col-auto fs-5">
@@ -43,7 +47,6 @@
                 </div>
             </div>
         </nav>
-    </div>
     </header>
     <!-- contenido principal -->
     <main class="contenido__extendido">
@@ -61,194 +64,188 @@
         </div>
 
         <!-- inicio seccion de productos -->
-        <section class="productos">
-            <div class="productos__titulo"><h3>Nuestros mejores precios</h3></div>
-            <div class="productos__contenido">
-                <!-- remplazar por productos -->
 
-                <div class="item__productos">
-                    <img src="../img/imagen.jpeg" alt="imagen">
-                    <div>
-                        <h3 class="item__productos--text">Producto1</h3>
-                        <p class="item__productos--text">Lo mejor que vas a comprar</p>
-                        <p class="item__productos--text">$$$$</p>
-                        <p class="item__productos--valoracion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
+        <!-- seccion catalogo -->
+
+        <div class="contenedor__catalogo">
+            <!-- filtro -->
+
+            <section class="filtro">
+                <h3 class="filtro__titulo">Filtro 1</h3>
+                <ul class="filtro__lista">
+                    <li><a href="#">Clase 1</a></li>
+                    <li><a href="#">Clase 2</a></li>
+                    <li><a href="#">Clase 3</a></li>
+                    <li><a href="#">Clase 4</a></li>
+                </ul>
+
+                <h3 class="filtro__titulo">Filtro 2</h3>
+                <ul class="filtro__lista">
+                    <li><a href="#">Color 1</a></li>
+                    <li><a href="#">Color 2</a></li>
+                    <li><a href="#">Color 3</a></li>
+                    <li><a href="#">Color 4</a></li>
+                    <li><a href="#">Color 5</a></li>
+                    <li><a href="#">Color 6</a></li>
+                </ul>
+
+                <h3 class="filtro__titulo">Filtro 3</h3>
+                <ul class="filtro__lista">
+                    <li><a href="#">Marca 1</a></li>
+                    <li><a href="#">Marca 2</a></li>
+                    <li><a href="#">Marca 3</a></li>
+                </ul>
+
+            </section>
+
+            <!-- catalogo -->
+
+            <section class="catalogo">
+<!--                 <div>
+                    <div class="seccion__productos--informacion">
+                        <h2 class="informacion__titulo">Encontra lo que necesitas</h2>
+                        <p class="informacion__texto">Consegui los muebles que mejor se adapten a vos, explora nuestros productos y converti tu casa en un hogar</p>
                     </div>
-                    <a href=""><button class="btn__productos">Ver producto</button></a>
+                </div> -->
+                <div class="seccion__productos">
+                
+                    <article class="productos__card">
+                        <img src="../img/products/producto__001--01.avif" alt="Silla blanca sin fondo">
+                        <div class="productos__info">
+                            <h2>Silla clasica</h2>
+                            <p>Silla clasica, medidas: 90x42x49</p>
+                            <p>$2.900</p>
+                            <p class="item__productos--valoracion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                        </div>
+                        <a href="../pages/productos/producto__001.html"><button class="boton__animado">Ver producto</button></a>
+                    </article>
+
+                    <article class="productos__card">
+                        <img src="../img/products/producto__001--01.avif" alt="Silla blanca sin fondo">
+                        <div class="productos__info">
+                            <h2>Silla clasica</h2>
+                            <p>Silla clasica, medidas: 90x42x49</p>
+                            <p>$2.900</p>
+                            <p class="item__productos--valoracion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                        </div>
+                        <a href="../pages/productos/producto__001.html"><button class="boton__animado">Ver producto</button></a>
+                    </article>
+
+                    <article class="productos__card">
+                        <img src="../img/products/producto__001--01.avif" alt="Silla blanca sin fondo">
+                        <div class="productos__info">
+                            <h2>Silla clasica</h2>
+                            <p>Silla clasica, medidas: 90x42x49</p>
+                            <p>$2.900</p>
+                            <p class="item__productos--valoracion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                        </div>
+                        <a href="../pages/productos/producto__001.html"><button class="boton__animado">Ver producto</button></a>
+                    </article>
+
+                    <article class="productos__card">
+                        <img src="../img/products/producto__001--01.avif" alt="Silla blanca sin fondo">
+                        <div class="productos__info">
+                            <h2>Silla clasica</h2>
+                            <p>Silla clasica, medidas: 90x42x49</p>
+                            <p>$2.900</p>
+                            <p class="item__productos--valoracion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                        </div>
+                        <a href="../pages/productos/producto__001.html"><button class="boton__animado">Ver producto</button></a>
+                    </article>
+
+                    <article class="productos__card">
+                        <img src="../img/products/producto__001--01.avif" alt="Silla blanca sin fondo">
+                        <div class="productos__info">
+                            <h2>Silla clasica</h2>
+                            <p>Silla clasica, medidas: 90x42x49</p>
+                            <p>$2.900</p>
+                            <p class="item__productos--valoracion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                        </div>
+                        <a href="../pages/productos/producto__001.html"><button class="boton__animado">Ver producto</button></a>
+                    </article>
+
+                    <article class="productos__card">
+                        <img src="../img/products/producto__001--01.avif" alt="Silla blanca sin fondo">
+                        <div class="productos__info">
+                            <h2>Silla clasica</h2>
+                            <p>Silla clasica, medidas: 90x42x49</p>
+                            <p>$2.900</p>
+                            <p class="item__productos--valoracion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                        </div>
+                        <a href="../pages/productos/producto__001.html"><button class="boton__animado">Ver producto</button></a>
+                    </article>
+
+                    <article class="productos__card">
+                        <img src="../img/products/producto__001--01.avif" alt="Silla blanca sin fondo">
+                        <div class="productos__info">
+                            <h2>Silla clasica</h2>
+                            <p>Silla clasica, medidas: 90x42x49</p>
+                            <p>$2.900</p>
+                            <p class="item__productos--valoracion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                        </div>
+                        <a href="../pages/productos/producto__001.html"><button class="boton__animado">Ver producto</button></a>
+                    </article>
+
+                    <article class="productos__card">
+                        <img src="../img/products/producto__001--01.avif" alt="Silla blanca sin fondo">
+                        <div class="productos__info">
+                            <h2>Silla clasica</h2>
+                            <p>Silla clasica, medidas: 90x42x49</p>
+                            <p>$2.900</p>
+                            <p class="item__productos--valoracion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                        </div>
+                        <a href="../pages/productos/producto__001.html"><button class="boton__animado">Ver producto</button></a>
+                    </article>
+
+                    <article class="productos__card">
+                        <img src="../img/products/producto__001--01.avif" alt="Silla blanca sin fondo">
+                        <div class="productos__info">
+                            <h2>Silla clasica</h2>
+                            <p>Silla clasica, medidas: 90x42x49</p>
+                            <p>$2.900</p>
+                            <p class="item__productos--valoracion">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                        </div>
+                        <a href="../pages/productos/producto__001.html"><button class="boton__animado">Ver producto</button></a>
+                    </article>
                 </div>
-
-                <div class="item__productos">
-                    <img src="../img/imagen.jpeg" alt="imagen">
-                    <div>
-                        <h3 class="item__productos--text">Producto1</h3>
-                        <p class="item__productos--text">Lo mejor que vas a comprar</p>
-                        <p class="item__productos--text">$$$$</p>
-                        <p class="item__productos--valoracion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                    </div>
-                    <a href=""><button class="btn__productos">Ver producto</button></a>
-                </div>
-
-                <div class="item__productos">
-                    <img src="../img/imagen.jpeg" alt="imagen">
-                    <div>
-                        <h3 class="item__productos--text">Producto1</h3>
-                        <p class="item__productos--text">Lo mejor que vas a comprar</p>
-                        <p class="item__productos--text">$$$$</p>
-                        <p class="item__productos--valoracion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                    </div>
-                    <a href=""><button class="btn__productos">Ver producto</button></a>
-                </div>
-
-                <div class="item__productos">
-                    <img src="../img/imagen.jpeg" alt="imagen">
-                    <div>
-                        <h3 class="item__productos--text">Producto1</h3>
-                        <p class="item__productos--text">Lo mejor que vas a comprar</p>
-                        <p class="item__productos--text">$$$$</p>
-                        <p class="item__productos--valoracion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                    </div>
-                    <a href=""><button class="btn__productos">Ver producto</button></a>
-                </div>
-
-                <div class="item__productos">
-                    <img src="../img/imagen.jpeg" alt="imagen">
-                    <div>
-                        <h3 class="item__productos--text">Producto1</h3>
-                        <p class="item__productos--text">Lo mejor que vas a comprar</p>
-                        <p class="item__productos--text">$$$$</p>
-                        <p class="item__productos--valoracion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                    </div>
-                    <a href=""><button class="btn__productos">Ver producto</button></a>
-                </div>
-
-                <div class="item__productos">
-                    <img src="../img/imagen.jpeg" alt="imagen">
-                    <div>
-                        <h3 class="item__productos--text">Producto1</h3>
-                        <p class="item__productos--text">Lo mejor que vas a comprar</p>
-                        <p class="item__productos--text">$$$$</p>
-                        <p class="item__productos--valoracion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                    </div>
-                    <a href=""><button class="btn__productos">Ver producto</button></a>
-                </div>
-
-                <div class="item__productos">
-                    <img src="../img/imagen.jpeg" alt="imagen">
-                    <div>
-                        <h3 class="item__productos--text">Producto1</h3>
-                        <p class="item__productos--text">Lo mejor que vas a comprar</p>
-                        <p class="item__productos--text">$$$$</p>
-                        <p class="item__productos--valoracion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                    </div>
-                    <a href=""><button class="btn__productos">Ver producto</button></a>
-                </div>
-
-                <div class="item__productos">
-                    <img src="../img/imagen.jpeg" alt="imagen">
-                    <div>
-                        <h3 class="item__productos--text">Producto1</h3>
-                        <p class="item__productos--text">Lo mejor que vas a comprar</p>
-                        <p class="item__productos--text">$$$$</p>
-                        <p class="item__productos--valoracion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                    </div>
-                    <a href=""><button class="btn__productos">Ver producto</button></a>
-                </div>
-
-                <div class="item__productos">
-                    <img src="../img/imagen.jpeg" alt="imagen">
-                    <div>
-                        <h3 class="item__productos--text">Producto1</h3>
-                        <p class="item__productos--text">Lo mejor que vas a comprar</p>
-                        <p class="item__productos--text">$$$$</p>
-                        <p class="item__productos--valoracion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                    </div>
-                    <a href=""><button class="btn__productos">Ver producto</button></a>
-                </div>
-
-                <div class="item__productos">
-                    <img src="../img/imagen.jpeg" alt="imagen">
-                    <div>
-                        <h3 class="item__productos--text">Producto1</h3>
-                        <p class="item__productos--text">Lo mejor que vas a comprar</p>
-                        <p class="item__productos--text">$$$$</p>
-                        <p class="item__productos--valoracion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                    </div>
-                    <a href=""><button class="btn__productos">Ver producto</button></a>
-                </div>
-
-                <div class="item__productos">
-                    <img src="../img/imagen.jpeg" alt="imagen">
-                    <div>
-                        <h3 class="item__productos--text">Producto1</h3>
-                        <p class="item__productos--text">Lo mejor que vas a comprar</p>
-                        <p class="item__productos--text">$$$$</p>
-                        <p class="item__productos--valoracion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                    </div>
-                    <a href=""><button class="btn__productos">Ver producto</button></a>
-                </div>
-
-                <div class="item__productos">
-                    <img src="../img/imagen.jpeg" alt="imagen">
-                    <div>
-                        <h3 class="item__productos--text">Producto1</h3>
-                        <p class="item__productos--text">Lo mejor que vas a comprar</p>
-                        <p class="item__productos--text">$$$$</p>
-                        <p class="item__productos--valoracion">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                    </div>
-                    <a href=""><button class="btn__productos">Ver producto</button></a>
-                </div>
-
-
-        </section>
-
+            </section>
+        </div>
     </main>
 
     <footer>

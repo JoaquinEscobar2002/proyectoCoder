@@ -169,6 +169,7 @@ main .productos .productos__contenido .item__productos .item__productos--text{
     margin: 1rem 0rem;
     border: 1px solid rgb(80, 80, 80);
     text-align: center;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .5);
 }
 
 .productos__card .productos__info button{
@@ -212,6 +213,57 @@ main .productos .productos__contenido .item__productos .item__productos--text{
     justify-content: start;
     overflow-y: scroll;
 }
+
+.contenedor__catalogo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:"prodd";
+    background-color: #2222222a;
+}
+
+/* filtro lateral */
+
+.filtro{
+    padding-left: 10% ;
+    grid-area: flt;
+    display: none;
+    background-color: white;
+}
+
+.filtro__titulo{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.filtro__lista{
+    list-style: none;
+}
+
+.filtro__lista li a{
+    color: black;
+}
+
+/* productos del catalogo */
+
+.catalogo{
+    background-color: white;
+    grid-area: prodd;
+}
+
+@media screen and (min-width:570px) {
+    .contenedor__catalogo{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:"flt prodd prodd prodd";
+        padding: .5rem;
+    }
+
+    .filtro{
+        display: inline;
+        margin-right: .5rem;
+    }
+}
+
 
 
 /* ---estilos guia.html--- */
