@@ -1,0 +1,51 @@
+/* productos en vertical para catalogo */
+.seccion__productos--informacion{
+    margin: 0px 5%;
+    text-align: start;
+    margin-top: 4rem;
+}
+.seccion__productos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .productos__card{
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0rem;
+        border: 1px solid rgb(80, 80, 80);
+        text-align: center;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, .5);
+        img{
+            height: 298px;
+        }
+        .boton__animado{
+            width: 300px;
+            padding: 1rem 0px;
+            border-radius: 0;
+            border: 1px solid black;
+        }
+    }
+}
+.boton__animado:hover{
+    background-color: red;
+    transition: .5s;
+}
+
+@media screen and (min-width:570px) {
+    
+    .seccion__productos{
+        .productos__card{
+            width: 270px;
+            margin: 1rem;
+            img{
+                height: 268px;
+            }
+            .boton__animado{
+                width: 270px;
+            }
+        }
+    }
+}
