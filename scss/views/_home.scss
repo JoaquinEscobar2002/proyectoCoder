@@ -1,4 +1,14 @@
-@import "components/nav-categorias.scss";
+/* ----- estilos del home -----*/
+
+@import "components/nav-categorias";
 @import "components/productos-scroll";
 @import "components/productos-scroll-catalogo";
+@import "base/colores";
+
+body{
+    background-color: $color_body;
+    .contenido__categorias{
+        background-color: $color_principal;
+    }
+}
 

@@ -1,0 +1,16 @@
+/*----- estilos aplicados a novedades.html -----*/
+@import "components/tarjeta-novedades";
+
+.main__novedades{
+    margin: 5%;
+    .seccion__articulos{
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    .intro{
+        width: 100%;
+        text-align: start;
+        margin-bottom: 1rem;
+    }
+}

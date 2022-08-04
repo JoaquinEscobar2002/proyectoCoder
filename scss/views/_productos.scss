@@ -1,0 +1,24 @@
+/*----- estilos aplicados a productos.html ----*/
+@import "components/productos-scroll-catalogo";
+@import "components/filtro";
+@import "components/nav-categorias";
+
+.contenedor__catalogo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:"prodd";
+}
+
+@media screen and (min-width:570px) {
+    .contenedor__catalogo{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:"flt prodd prodd prodd";
+        padding: .5rem;
+    }
+
+    .filtro{
+        display: inline;
+        margin-right: .5rem;
+    }
+}
