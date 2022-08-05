@@ -1,0 +1,6 @@
+@mixin transformacion-escala($transform){
+    -webkit-transform: $transform;
+    -o-transform: $transform;
+    -moz-transform: $transform;
+    transform: $transform;
+}

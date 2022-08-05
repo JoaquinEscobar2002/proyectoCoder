@@ -107,6 +107,9 @@ footer {
 
 @media (hover: hover) {
   .productos__tarjeta:hover {
+    -webkit-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    -moz-transform: scale(1.01);
     transform: scale(1.01);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5); }
   .productos__contenedor .productos__tarjeta:hover > a > .productos__info > .titulo__prod {

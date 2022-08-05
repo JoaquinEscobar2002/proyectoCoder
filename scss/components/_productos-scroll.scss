@@ -1,4 +1,6 @@
 /* productos en scroll horizontal */
+@import "utilities/mixins";
+
 .productos{
     margin: .8rem 0px;
     background-color: $color_body;
@@ -55,7 +57,7 @@
 
 @media (hover: hover){
     .productos__tarjeta:hover{
-        transform: scale(1.01);
+        @include transformacion-escala(scale(1.01));
         box-shadow: 0 1rem 1rem rgba(0, 0, 0, .5);
     }
 
