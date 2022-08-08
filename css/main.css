@@ -160,6 +160,74 @@ footer {
     .catalogo .seccion__productos .productos__card .boton__animado {
       width: 270px; } }
 
+/* tarjetas con publicidad */
+.publicidad {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem; }
+  .publicidad .publicidad__tarjeta {
+    display: flex;
+    width: auto;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 5px; }
+    .publicidad .publicidad__tarjeta .publicidad__text {
+      padding: 1rem;
+      background-color: white;
+      height: 190px; }
+      .publicidad .publicidad__tarjeta .publicidad__text .publicidad__text--one {
+        font-size: .8rem;
+        background-color: white;
+        text-transform: uppercase;
+        color: #444444; }
+      .publicidad .publicidad__tarjeta .publicidad__text .publicidad__text--two {
+        font-size: 1rem;
+        margin: 0;
+        background-color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #444444; }
+      .publicidad .publicidad__tarjeta .publicidad__text button {
+        background-color: #11b3f3;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: .5rem;
+        margin: 2rem 0px;
+        border-radius: 3px;
+        border: 1px solid #595959;
+        color: white; }
+    .publicidad .publicidad__tarjeta .publicidad__img {
+      height: 190px;
+      width: 150px; }
+      .publicidad .publicidad__tarjeta .publicidad__img img {
+        height: 100%;
+        width: auto; }
+
+@media screen and (min-width: 600px) {
+  .publicidad .publicidad__tarjeta {
+    height: 250px; }
+    .publicidad .publicidad__tarjeta .publicidad__img {
+      height: 100%;
+      width: auto; }
+    .publicidad .publicidad__tarjeta .publicidad__text {
+      padding: 1rem;
+      background-color: white;
+      height: 100%; }
+      .publicidad .publicidad__tarjeta .publicidad__text .publicidad__text--one {
+        font-size: 1rem;
+        padding-top: .5rem; }
+      .publicidad .publicidad__tarjeta .publicidad__text .publicidad__text--two {
+        font-size: 2rem; }
+      .publicidad .publicidad__tarjeta .publicidad__text button {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: .5rem 2rem;
+        margin: 2rem 0px; } }
+
 body {
   background-color: #E9E9E9; }
   body .contenido__categorias {

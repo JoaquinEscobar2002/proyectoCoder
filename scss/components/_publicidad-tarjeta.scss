@@ -1,0 +1,84 @@
+/* tarjetas con publicidad */
+.publicidad{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    .publicidad__tarjeta{
+        display: flex;
+        width: auto;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        overflow: hidden;
+        margin: 5px;
+        .publicidad__text{
+            padding: 1rem;
+            background-color: white;
+            height: 190px;
+            .publicidad__text--one{
+                font-size: .8rem;
+                background-color: white;
+                text-transform: uppercase;
+                color: rgb(68, 68, 68);
+            }
+            .publicidad__text--two{
+                font-size: 1rem;
+                margin: 0;
+                background-color: white;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: rgb(68, 68, 68);
+            }
+            button{
+                background-color: rgb(17, 179, 243);
+                font-size: 1rem;
+                font-weight: bold;
+                padding: .5rem;
+                margin: 2rem 0px ;
+                border-radius: 3px;
+                border: 1px solid rgb(89, 89, 89);
+                color: white;
+            }
+        }
+        .publicidad__img{
+            height: 190px;
+            width: 150px ;
+            img{
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:600px){
+ .publicidad{
+    .publicidad__tarjeta{
+        height: 250px;
+        .publicidad__img{
+            height: 100%;
+            width: auto;
+        }
+        .publicidad__text{
+            padding: 1rem;
+            background-color: white;
+            height: 100%;
+            .publicidad__text--one{
+                font-size: 1rem;
+                padding-top: .5rem;
+            }
+            .publicidad__text--two{
+                font-size: 2rem;
+            }
+            button{
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: .5rem 2rem;
+                margin: 2rem 0px;
+            }
+        }
+    }
+ }
+}
