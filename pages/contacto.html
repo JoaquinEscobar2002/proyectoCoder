@@ -18,7 +18,7 @@
     <!-- TITULO -->
     <title>Contacto</title>
 </head>
-<body>  
+<body class="body__form">  
     <header class="container-fluid">
         <!-- menu de navegacion -->
         <nav class="navbar navbar-expand-lg menu">
@@ -52,29 +52,27 @@
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main  class="main__form">
+    <main>
+        <!-- FORMULARIO DE CONTACTO -->
+        <div class="contenedor__form">
+            <form action="" class="form">
+                <div class="form__header">
+                    <h1 class="form__title">C<span>ontacto</span></h1>
+                </div>
 
-        <!-- FORMULARIO -->
-        <div class="contenedor">
-            <form action="">
-                <fieldset>
-                    <legend>Dejanos tu consulta!</legend>
-                    <div>
-                        <input class="in" type="text" name="nombre" placeholder="Nombre">
-                    </div>
-                    <div>
-                        <input class="in" type="text" name="apellido" placeholder="Apellido">
-                    </div>
-                    <div>
-                        <input class="in" type="email" name="mail" placeholder="Email">
-                    </div>
-                    <div>
-                        <input class="in__msj" class="consulta-input" type="text" name="consulta" placeholder="¿Como podemos ayudarte?">
-                    </div>
-                    <div>
-                        <input class="boton__enviar" type="submit" value="Enviar">
-                    </div>
-                </fieldset>
+                <label for="nombre" class="form__label">Nombre:</label>
+                <input type="text" id="nombre" class="form__input" placeholder="Escriba su nombre">
+
+                <label for="apellido" class="form__label">Apellido:</label>
+                <input type="text" id="apellido" class="form__input" placeholder="Escriba su apellido">
+
+                <label for="correo" class="form__label">Correo de contacto:</label>
+                <input type="email" id="correo" class="form__input" placeholder="Escriba su correo electronico">
+
+                <label for="mensaje" class="form__label">Mensaje:</label>
+                <textarea type="text" id="mensaje" class="form__textarea" placeholder="Dejanos tu consulta aquí"></textarea>
+
+                <input type="submit" class="form__btn" value="Enviar Consulta">
             </form>
         </div>
     </main>
@@ -82,7 +80,7 @@
     <!-- footer -->
     <footer>
         <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
               <div class="col-md-4 d-flex align-items-center">
                     <span class="mb-3 mb-md-0">© 2022 TiendaOnline S.A.</span>
               </div>

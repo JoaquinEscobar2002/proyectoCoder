@@ -1,6 +1,7 @@
 @import "components/form-contacto";
 
-.contenedor{
-    display: flex;
-    justify-content: flex-end;
+.body__form{
+    background: url(../../img/form__img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
