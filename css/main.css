@@ -499,6 +499,6 @@ body {
     background-color: #f29718; }
 
 .body__form {
-  background: url(../../img/form__img.jpg);
+  background: url(../img/form__img.jpg);
   background-size: cover;
   background-attachment: fixed; }
