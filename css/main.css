@@ -448,6 +448,7 @@ body {
     text-align: start;
     margin-bottom: 1rem; }
 
+/*----- estilos aplicados a contacto.html -----*/
 .contenedor__form .form {
   background: rgba(0, 0, 0, 0.6);
   width: 90%;
@@ -499,6 +500,10 @@ body {
     background-color: #f29718; }
 
 .body__form {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background: url(../img/form__img.jpg);
-  background-size: cover;
-  background-attachment: fixed; }
+  background-size: cover; }
+  .footer__form {
+    margin-top: auto; }
